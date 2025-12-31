@@ -60,10 +60,10 @@ export default function Home() {
                         Error 402: Payment Required
                     </div>
                     <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 tracking-tight">
-                        Support the Project
+                        Support my Projects
                     </h1>
                     <p className="text-zinc-400 text-lg max-w-md mx-auto">
-                        Your contribution helps keep this project alive and
+                        Your contribution helps keep my projects alive and
                         running.
                     </p>
                 </header>
@@ -83,11 +83,11 @@ export default function Home() {
                                             key={val}
                                             onClick={() => setAmount(val)}
                                             className={`py-2.5 rounded-lg text-sm font-medium transition-all
-                        ${
-                            amount === val
-                                ? 'bg-white text-black'
-                                : 'bg-zinc-800 text-zinc-300 hover:bg-zinc-700'
-                        }`}
+                                            ${
+                                                amount === val
+                                                    ? 'bg-white text-black'
+                                                    : 'bg-zinc-800 text-zinc-300 hover:bg-zinc-700'
+                                            }`}
                                         >
                                             ${val}
                                         </button>
@@ -160,10 +160,6 @@ export default function Home() {
                                     </>
                                 )}
                             </Button>
-
-                            <p className="text-xs text-zinc-600 text-center">
-                                Secure payment powered by Stripe
-                            </p>
                         </CardContent>
                     </Card>
 
@@ -226,7 +222,7 @@ export default function Home() {
                                                 </div>
                                                 {d.message && (
                                                     <p className="mt-3 text-sm text-zinc-400 pl-12">
-                                                        "{d.message}"
+                                                        {d.message}
                                                     </p>
                                                 )}
                                             </div>
