@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://error402.1jm.dev/sitemap.xml
+
+# Block common non-content paths
+Disallow: /api/
+Disallow: /static/
+Disallow: /*.json$
+Disallow: /vercel/
